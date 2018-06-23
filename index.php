@@ -13,6 +13,24 @@ class Calculadora {
         return $this;
     }
     
+    public function subtrair ($n1){
+        $this->n -= $n1;
+        return $this;
+    }
+    
+    public function multiplicar ($n1){
+        $this->n *= $n1;
+        return $this;
+    }
+    
+    public function dividir ($n1){
+        $this->n /= $n1;
+        return $this;
+    }
+    
+    public function resultado(){
+        return $this->n;
+    }
    
 }
 
@@ -21,7 +39,7 @@ class Calculadora {
     $calc->somar(2)->subtrair(3)->multiplicar(5)->dividir(2);
     $resultado = $calc->resultado(); //22.5
     
-    
+    echo "Resultado é: ".$resultado;
     
     
 ?>
