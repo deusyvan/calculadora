@@ -19,15 +19,13 @@ class Calculadora {
     }
 }
 
-
     $calc = new Calculadora();
 
-    echo "2 + 10 = ".$calc->somar(2, 10)."<br/>";
-    echo "20 - 16 = ".$calc->subtrair(20, 16)."<br/>";
-    echo "9 * 12 = ".$calc->multiplicar(9, 12)."<br/>";
-    echo "12 / 2 = ".$calc->dividir(12, 2)."<br/>";
+    $calc->definirNumeroInicial(10);
+    $calc->somar(2)->subtrair(3)->multiplicar(5)->dividir(2);
+    $resultado = $calc->resultado();
     
     
-    
+?>
     
     
