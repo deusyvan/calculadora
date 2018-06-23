@@ -8,6 +8,10 @@ class Calculadora {
         $this->n = $numeroInicial;
     }
     
+    public function somar ($n1){
+        $this->n = $this->n + $n1;
+    }
+    
    
 }
 
